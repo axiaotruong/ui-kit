@@ -1,0 +1,28 @@
+.wrapper {
+  width: 100%;
+  border-collapse: collapse; }
+  .wrapper tr td, .wrapper tr th {
+    text-align: left;
+    padding: 15px 15px;
+    border-bottom: 1px solid #EAEDF3;
+    line-height: 1.5; }
+    .wrapper tr td:first-child, .wrapper tr th:first-child {
+      padding-left: 30px; }
+    .wrapper tr td:last-child, .wrapper tr th:last-child {
+      padding-right: 30px; }
+  .wrapper tr th {
+    font-weight: 500;
+    font-size: .75rem;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    color: #9EA0A5;
+    line-height: 1.125rem;
+    height: 44px;
+    align-items: center; }
+  .wrapper tr td {
+    font-size: .875rem;
+    height: 70px;
+    padding: 0 inherit;
+    color: #3E3F42; }
+    .wrapper tr td p {
+      color: #3E3F42; }

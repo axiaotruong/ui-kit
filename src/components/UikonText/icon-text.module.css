@@ -1,0 +1,15 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer; }
+  .wrapper + .wrapper {
+    margin-left: 15px; }
+  .wrapper i {
+    color: #9EA0A5;
+    margin-right: 10px;
+    font-size: 1.2rem; }
+  .wrapper .text {
+    color: #9EA0A5;
+    font-size: 0.875rem; }
+  .wrapper.highlight i, .wrapper:hover i {
+    color: #1665D8; }

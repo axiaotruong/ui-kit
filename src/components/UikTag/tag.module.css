@@ -1,0 +1,29 @@
+.wrapper {
+  border-radius: 4px;
+  /* ADMIN: */
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 18px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #EAEDF3;
+  color: #9EA0A5;
+  font-weight: 500;
+  padding: 0 8px;
+  height: 24px; }
+  .wrapper:global(.green) {
+    border: 1px solid #38B249;
+    color: #38B249; }
+  .wrapper:global(.blue) {
+    border: 1px solid #1665D8;
+    color: #1665D8; }
+  .wrapper:global(.orange) {
+    border: 1px solid #F6AB2F;
+    color: #F6AB2F; }
+  .wrapper:global(.violet) {
+    border: 1px solid #6977FF;
+    color: #6977FF; }
+  .wrapper:global(.red) {
+    border: 1px solid #E6492D;
+    color: #E6492D; }

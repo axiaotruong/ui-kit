@@ -1,0 +1,7 @@
+.wrapper i {
+  color: #EAEDF3; }
+  .wrapper i + * {
+    margin-left: 2px; }
+
+.wrapper i.fill {
+  color: #FACF55; }

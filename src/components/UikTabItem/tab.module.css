@@ -1,0 +1,25 @@
+.item {
+  height: 70px;
+  border-bottom: 3px solid transparent;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer; }
+  .item .extra {
+    color: #9EA0A5;
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 5px;
+    font-size: .875rem; }
+  .item:hover {
+    color: #3E3F42;
+    border-bottom-color: rgba(22, 101, 216, 0.3); }
+  .item:global(.active) {
+    border-bottom-color: #1665D8;
+    font-weight: 500;
+    color: #3E3F42; }
+  .item.small {
+    height: 62px;
+    font-size: .875rem; }
+    .item.small .extra {
+      font-size: .75rem; }

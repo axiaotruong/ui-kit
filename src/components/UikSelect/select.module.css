@@ -1,0 +1,141 @@
+.wrapper {
+  position: relative;
+  font-size: 0.875rem;
+  display: inline-block; }
+  .wrapper .valueRendered {
+    width: 100%;
+    text-align: left;
+    position: relative; }
+    .wrapper .valueRendered .label {
+      position: absolute;
+      top: -18px;
+      font-size: 1rem;
+      left: 14px;
+      pointer-events: none; }
+    .wrapper .valueRendered .valueRenderedWrapper {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      justify-content: center;
+      width: 100%; }
+      .wrapper .valueRendered .valueRenderedWrapper > * {
+        flex-grow: 1;
+        max-width: 100%;
+        min-width: 1px; }
+      .wrapper .valueRendered .valueRenderedWrapper .arrowWrapper {
+        flex-grow: 0;
+        transition: 0.2s color;
+        position: relative;
+        width: 1px;
+        height: 100%;
+        margin-left: 12px; }
+        .wrapper .valueRendered .valueRenderedWrapper .arrowWrapper:before, .wrapper .valueRendered .valueRenderedWrapper .arrowWrapper:after {
+          display: block;
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 3px solid transparent;
+          border-right: 3px solid transparent;
+          border-bottom: 3px solid #9EA0A5; }
+        .wrapper .valueRendered .valueRenderedWrapper .arrowWrapper:after {
+          top: -4px; }
+        .wrapper .valueRendered .valueRenderedWrapper .arrowWrapper:before {
+          top: 2px;
+          transform: rotate(180deg); }
+  .wrapper .valueWrapper {
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    .wrapper .valueWrapper.placeholderEmpty {
+      color: #9EA0A5; }
+
+.optionListWrapper {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  border: 1px solid #D8DCE6;
+  background: white;
+  border-radius: 4px;
+  position: absolute !important;
+  z-index: 1000;
+  top: 100%;
+  right: 0;
+  transform: translateY(6px);
+  max-height: 306px;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  min-width: 140px; }
+  .optionListWrapper > * {
+    min-height: 1px; }
+  .optionListWrapper .optionList {
+    width: 100%;
+    min-height: 1px;
+    max-height: 235px;
+    position: relative;
+    overflow-y: auto; }
+    .optionListWrapper .optionList > * {
+      width: 100%; }
+    .optionListWrapper .optionList .option,
+    .optionListWrapper .optionList .option:focus {
+      width: 100%;
+      outline: none;
+      cursor: pointer;
+      width: 100%;
+      background: transparent;
+      border: none;
+      text-align: left;
+      border-radius: 0;
+      min-height: 38px; }
+      .optionListWrapper .optionList .option .optionContent,
+      .optionListWrapper .optionList .option:focus .optionContent {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center; }
+        .optionListWrapper .optionList .option .optionContent > *,
+        .optionListWrapper .optionList .option:focus .optionContent > * {
+          min-width: 1px;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+        .optionListWrapper .optionList .option .optionContent > *:first-child,
+        .optionListWrapper .optionList .option:focus .optionContent > *:first-child {
+          flex-grow: 1;
+          flex-shrink: 1; }
+      .optionListWrapper .optionList .option .check,
+      .optionListWrapper .optionList .option:focus .check {
+        color: #38B249;
+        margin-left: 12px;
+        flex-shrink: 0;
+        position: relative;
+        width: 5px;
+        height: 5px;
+        background: #38B249;
+        border-radius: 50%; }
+      .optionListWrapper .optionList .option:not(:last-child),
+      .optionListWrapper .optionList .option:focus:not(:last-child) {
+        border-bottom: 1px solid #EAEDF3; }
+    .optionListWrapper .optionList .option:focus {
+      color: #3E3F42; }
+
+.labelAndOther {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .labelAndOther > *:first-child {
+    min-width: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .labelAndOther .plusValue {
+    display: inline-block;
+    background: #D8DCE6;
+    border: 1px solid #EAEDF3;
+    height: 20px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    min-width: 30px;
+    margin-left: 10px;
+    font-size: 0.7rem; }

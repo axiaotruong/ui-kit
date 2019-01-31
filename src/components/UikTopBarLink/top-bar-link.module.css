@@ -1,0 +1,10 @@
+.wrapper {
+  height: 38px;
+  line-height: 38px;
+  padding: 0 15px;
+  display: block;
+  cursor: pointer;
+  font-size: .875rem;
+  color: #3E3F42; }
+  .wrapper:hover, .wrapper:global(.active) {
+    color: #1665D8; }

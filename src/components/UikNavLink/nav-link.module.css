@@ -1,0 +1,28 @@
+.wrapper {
+  font-size: .875rem;
+  color: #3E3F42;
+  display: block;
+  padding: 0 30px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .wrapper .icon {
+    display: inline-block;
+    margin-right: 12px;
+    width: 18px;
+    text-align: center; }
+  .wrapper .rightEl {
+    font-size: 0.75rem;
+    color: #9EA0A5;
+    line-height: 1rem; }
+  .wrapper.highlighted .text {
+    font-weight: 500; }
+  .wrapper:global(.active) {
+    font-weight: 500;
+    color: #1665D8;
+    background: rgba(84, 147, 245, 0.05);
+    box-shadow: inset 3px 0 0 0 #1665D8; }
+  .wrapper:hover {
+    color: #1665D8;
+    background: rgba(84, 147, 245, 0.05); }

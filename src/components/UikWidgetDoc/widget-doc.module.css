@@ -1,0 +1,40 @@
+.wrapper h1:not([class]), .wrapper h2:not([class]), .wrapper h3:not([class]), .wrapper h4:not([class]) {
+  color: #3E3F42;
+  max-width: 760px; }
+  .wrapper h1:not([class]) + p, .wrapper h2:not([class]) + p, .wrapper h3:not([class]) + p, .wrapper h4:not([class]) + p {
+    margin-top: 10px; }
+
+.wrapper p:not([class]) {
+  color: #6B6C6F;
+  max-width: 760px; }
+  .wrapper p:not([class]) + p {
+    margin-top: .8rem; }
+
+.wrapper h1:not([class]) {
+  /* Headline: */
+  font-weight: 300;
+  font-size: 2.25rem;
+  line-height: 3.125rem; }
+
+.wrapper h2:not([class]) {
+  /* Headline: */
+  font-weight: 300;
+  font-size: 1.875rem;
+  line-height: 2.75rem;
+  /* Headline: */ }
+
+.wrapper h3:not([class]) {
+  font-size: 1.375rem;
+  line-height: 2rem; }
+
+.wrapper ul {
+  padding-left: 20px; }
+
+.wrapper a:not([class]) {
+  color: #1665D8; }
+
+.wrapper p a:not([class]):hover {
+  text-decoration: underline; }
+
+.wrapper em {
+  color: #9EA0A5; }

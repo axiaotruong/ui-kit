@@ -1,0 +1,31 @@
+.wrapper {
+  color: #9EA0A5;
+  background-color: rgba(158, 160, 165, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+  font-size: 1.25rem; }
+  .wrapper.circle {
+    height: 62px;
+    width: 62px;
+    border-radius: 50%; }
+  .wrapper.square {
+    height: 38px;
+    width: 38px;
+    border-radius: 4px; }
+  .wrapper:global(.green) {
+    background-color: rgba(56, 178, 73, 0.1);
+    color: #38B249; }
+  .wrapper:global(.blue) {
+    background-color: rgba(22, 101, 216, 0.1);
+    color: #1665D8; }
+  .wrapper:global(.orange) {
+    background-color: rgba(246, 171, 47, 0.1);
+    color: #F6AB2F; }
+  .wrapper:global(.violet) {
+    background-color: rgba(105, 119, 255, 0.1);
+    color: #6977FF; }
+  .wrapper:global(.red) {
+    background-color: rgba(230, 73, 45, 0.1);
+    color: #E6492D; }

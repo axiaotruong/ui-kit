@@ -1,0 +1,27 @@
+.wrapper {
+  font-size: .875rem;
+  color: #6B6C6F;
+  display: block;
+  padding: 0 30px 0 46px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .wrapper .icon {
+    display: inline-block;
+    margin-right: 12px; }
+  .wrapper .rightEl {
+    font-size: 0.75rem;
+    color: #9EA0A5;
+    line-height: 1rem; }
+  .wrapper.highlighted .text {
+    color: #3E3F42;
+    font-weight: 500; }
+  .wrapper:global(.active) {
+    font-weight: 500;
+    color: #1665D8;
+    background: rgba(84, 147, 245, 0.05);
+    box-shadow: inset 3px 0 0 0 #1665D8; }
+  .wrapper:hover {
+    color: #1665D8;
+    background: rgba(84, 147, 245, 0.05); }

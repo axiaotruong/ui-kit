@@ -1,0 +1,19 @@
+.wrapper {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .wrapper .avatarWrapper + * {
+    margin-top: 14px; }
+  .wrapper .avatarWrapper .avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%; }
+  .wrapper .name {
+    color: #3E3F42;
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-size: 1rem; }
+  .wrapper .textTop {
+    color: #9EA0A5;
+    font-size: .875rem; }

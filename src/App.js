@@ -1,28 +1,39 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+    BrowserRouter as Router,
+    Route,
+    Switch,
+} from 'react-router-dom';
+import {
+    UikPageFade,
+} from './containers'
+import routes from "./routes/routes";
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    showContentMenus = (allRoutes) => {
+        let result = false;
+        if (Array.isArray(allRoutes) && allRoutes.length > 0) {
+            result = allRoutes.map((route, index) => (
+              <Route
+                key={index}
+                exact={route.exact}
+                path={route.path}
+                component={route.component}
+              />
+            ));
+        }
+        return <Switch>{result}</Switch>;
+    }
+
+    render() {
+        return (
+          <Router>
+            <UikPageFade className='app'>
+              {this.showContentMenus(routes)}
+            </UikPageFade>
+          </Router>
+        );
+    }
 }
 
-export default App;
+export default (App);

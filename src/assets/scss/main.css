@@ -1,0 +1,292 @@
+@charset "UTF-8";
+@import url(./normalize.css);
+@font-face {
+  font-family: 'uikon';
+  src: url("../fonts/uikon.eot?65atsz");
+  src: url("../fonts/uikon.eot?65atsz#iefix") format("embedded-opentype"), url("../fonts/uikon.ttf?65atsz") format("truetype"), url("../fonts/uikon.woff?65atsz") format("woff"), url("../fonts/uikon.svg?65atsz#uikon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="uikon"], [class*="uikon"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'uikon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-help:before {
+  content: ""; }
+
+.icon-add:before {
+  content: ""; }
+
+.icon-arrow-dropdown:before {
+  content: ""; }
+
+.icon-check:before {
+  content: ""; }
+
+.icon-more:before {
+  content: ""; }
+
+.icon-trending_down:before {
+  content: ""; }
+
+.icon-trending_up:before {
+  content: ""; }
+
+.icon-star:before {
+  content: ""; }
+
+.icon-star-filled:before {
+  content: ""; }
+
+.icon-message:before {
+  content: ""; }
+
+.icon-send_round:before {
+  content: ""; }
+
+.icon-inbox_paper_round:before {
+  content: ""; }
+
+.icon-search_left:before {
+  content: ""; }
+
+.icon-settings:before {
+  content: ""; }
+
+.icon-love:before {
+  content: ""; }
+
+.icon-love-fill:before {
+  content: ""; }
+
+.icon-edit:before {
+  content: ""; }
+
+.icon-multitasking:before {
+  content: ""; }
+
+.icon-gallery_grid_view:before {
+  content: ""; }
+
+.icon-home:before {
+  content: ""; }
+
+.icon-profile_round:before {
+  content: ""; }
+
+.icon-profile_plus_round:before {
+  content: ""; }
+
+.icon-clock:before {
+  content: ""; }
+
+.icon-container:before {
+  content: ""; }
+
+.icon-globe_network:before {
+  content: ""; }
+
+.icon-calendar:before {
+  content: ""; }
+
+.icon-stats:before {
+  content: ""; }
+
+.icon-money_round:before {
+  content: ""; }
+
+.icon-cloud_up:before {
+  content: ""; }
+
+.icon-image_picture:before {
+  content: ""; }
+
+.icon-camera:before {
+  content: ""; }
+
+.icon-desktop:before {
+  content: ""; }
+
+.icon-phone:before {
+  content: ""; }
+
+.app {
+  height: 100%;
+  overflow: auto;
+  /*padding-top: 100px;*/ }
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+  height: 100%;
+  background: #FBFBFD; }
+
+:global .hidden {
+  opacity: 0 !important;
+  visibility: hidden; }
+
+@media screen and (max-width: 768px) {
+  :global .hidden-mobile {
+    display: none; } }
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  background: #FBFBFD;
+  color: #6B6C6F;
+  font-size: 16px;
+  overflow: hidden;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  body input,
+  body button,
+  body textarea {
+    color: #3E3F42;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif; }
+  body h1 + *,
+  body h2 + *,
+  body h3 + *,
+  body h4 + * {
+    margin-top: 1em; }
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6 {
+    transition: all 0.2s;
+    margin: 0;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #3E3F42; }
+    body h1 + p,
+    body h2 + p,
+    body h3 + p,
+    body h4 + p,
+    body h5 + p,
+    body h6 + p {
+      margin-top: 0.3em; }
+  body p {
+    transition: all 0.2s;
+    margin: 0;
+    line-height: 1.375rem;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #9EA0A5; }
+  body h1 {
+    font-size: 2.25rem;
+    font-weight: 600; }
+  body h2 {
+    font-size: 1.375rem;
+    line-height: 2rem; }
+  body h3 {
+    font-size: 1.125rem; }
+  body h4 {
+    font-size: 1.1rem; }
+  body p + * {
+    margin-top: 1.125em; }
+  body p + p {
+    margin-top: 0.4em; }
+  body :global .wf-loading:not(.wf-inactive) h1,
+  body :global .wf-loading:not(.wf-inactive) h2,
+  body :global .wf-loading:not(.wf-inactive) h3,
+  body :global .wf-loading:not(.wf-inactive) p,
+  body :global .wf-loading:not(.wf-inactive) span {
+    visibility: hidden; }
+  body a {
+    transition: .2s;
+    text-decoration: none;
+    cursor: pointer; }
+  body p a {
+    display: inline-block;
+    position: relative;
+    transition: all 0.2s; }
+  body strong {
+    font-weight: 500; }
+  body ul, body ol {
+    line-height: 1.5;
+    color: #3E3F42;
+    font-size: 0.875rem; }
+    body ul *:not(:last-child), body ol *:not(:last-child) {
+      margin-bottom: 8px; }
+  body ol {
+    padding-left: 20px; }
+  body ul:global(.no-style) {
+    list-style: none;
+    padding-left: 0; }
+    body ul:global(.no-style) ul {
+      padding-left: 20px; }
+  body code:not([class]) {
+    display: inline-block;
+    background: #FBFBFD;
+    border: 1px solid #DADEE7;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #34AA44;
+    line-height: 1.375rem;
+    padding: 4px 12px;
+    font-family: "Roboto", sans-serif; }
+
+:global #root {
+  height: 100%; }
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #9EA0A5;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #9EA0A5; }
+
+:-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #9EA0A5; }
+
+form {
+  max-width: 600px; }
+
+:global(.color-green) {
+  color: #38B249; }
+
+:global(.color-blue) {
+  color: #1665D8; }
+
+:global(.color-orange) {
+  color: #F6AB2F; }
+
+:global(.color-violet) {
+  color: #6977FF; }
+
+:global(.color-red) {
+  color: #E6492D; }

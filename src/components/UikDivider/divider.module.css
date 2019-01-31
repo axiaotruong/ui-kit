@@ -1,0 +1,9 @@
+.horizontal {
+  height: 1px;
+  width: 100%;
+  background: #EAEDF3; }
+
+.vertical {
+  width: 1px;
+  height: 100%;
+  background: #EAEDF3; }

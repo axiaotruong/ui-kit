@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  height: 60px;
+  padding: 0 30px;
+  align-items: center; }
+  .wrapper .icon + * {
+    margin-left: 20px;
+    flex-shrink: 0; }
+  .wrapper .title {
+    color: #3E3F42;
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap; }
+  .wrapper .count {
+    color: #9EA0A5;
+    margin-left: 20px;
+    flex-shrink: 0;
+    font-size: .875rem; }
+  .wrapper:not(:last-child) {
+    border-bottom: 1px solid #EAEDF3; }
+  .wrapper:hover .title {
+    color: #1665D8; }

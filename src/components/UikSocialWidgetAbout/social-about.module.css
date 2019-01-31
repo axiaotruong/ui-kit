@@ -1,0 +1,18 @@
+.wrapper .listWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px 22.75px; }
+  .wrapper .listWrapper > * {
+    max-width: calc(100% - 15px);
+    border-bottom: 1px solid #EAEDF3;
+    margin: 0 7.5px;
+    padding: 20px 0; }
+  .wrapper .listWrapper > *:last-child {
+    border-bottom: none; }
+  @media screen and (min-width: 1400px) {
+    .wrapper .listWrapper > * {
+      flex-basis: calc(50% - 15px);
+      flex-grow: 1; }
+    .wrapper .listWrapper > *:nth-last-child(-n+2) {
+      border-bottom: none; } }

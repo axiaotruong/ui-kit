@@ -1,0 +1,17 @@
+.wrapper {
+  padding: 23px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .wrapper:not(:last-child) {
+    border-bottom: 1px solid #EAEDF3; }
+  .wrapper h3 {
+    /* Title: */
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75rem; }
+    .wrapper h3 + * {
+      margin-top: 0; }
+  .wrapper.noDivider {
+    padding-bottom: 5px;
+    border-bottom: none; }

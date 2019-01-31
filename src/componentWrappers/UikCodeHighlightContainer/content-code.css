@@ -1,0 +1,22 @@
+.wrapper {
+  background: #303136;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1; }
+  .wrapper .tabContainer {
+    flex-shrink: 0;
+    background: #252529;
+    color: #9EA0A5;
+    border-bottom: none; }
+    .wrapper .tabContainer .tabItem:hover {
+      color: rgba(255, 255, 255, 0.8); }
+    .wrapper .tabContainer .tabItem:global(.active) {
+      color: white; }
+  .wrapper .codeWrapper {
+    padding: 30px;
+    overflow-y: scroll; }
+    .wrapper .codeWrapper > *:not(:last-child) {
+      margin-bottom: 30px; }
+  .wrapper.maxHeight {
+    max-height: 70vh; }

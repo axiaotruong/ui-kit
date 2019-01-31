@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .wrapper > *:not(:first-child) {
+    margin-top: 8px; }
+  .wrapper .label {
+    color: #9EA0A5;
+    text-transform: uppercase;
+    font-size: .75rem;
+    line-height: 1.125rem;
+    margin-bottom: 5px;
+    font-weight: 500; }
+  .wrapper .value {
+    font-size: 2.25rem;
+    color: #3E3F42;
+    line-height: 3.125rem; }
+  .wrapper .diff {
+    color: #38B249;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.375rem; }
+    .wrapper .diff .icon {
+      font-size: 20px;
+      margin-left: 12px; }
+    .wrapper .diff.down {
+      color: #E6492D; }
+  .wrapper .chart {
+    margin-top: 24px; }

@@ -1,0 +1,147 @@
+.wrapper {
+  display: flex;
+  align-items: center; }
+  .wrapper .name {
+    /* Author: */
+    font-size: 0.875rem;
+    color: #3E3F42;
+    line-height: 1.375rem;
+    overflow: hidden;
+    white-space: nowrap; }
+    .wrapper .name i {
+      font-style: normal;
+      color: #9EA0A5; }
+  .wrapper.highlighted .name {
+    font-weight: 500; }
+  .wrapper .avatarWrapper {
+    position: relative;
+    height: 38px;
+    width: 38px;
+    flex-shrink: 0; }
+    .wrapper .avatarWrapper .avatarAction {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+    .wrapper .avatarWrapper .avatarPlaceholder {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      color: #9EA0A5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      line-height: 1.5rem;
+      text-transform: uppercase;
+      background-color: transparent;
+      border: 1px solid #EAEDF3; }
+      .wrapper .avatarWrapper .avatarPlaceholder:global(.green) {
+        color: white;
+        background-color: #38B249;
+        border-color: transparent; }
+      .wrapper .avatarWrapper .avatarPlaceholder:global(.blue) {
+        color: white;
+        background-color: #1665D8;
+        border-color: transparent; }
+      .wrapper .avatarWrapper .avatarPlaceholder:global(.orange) {
+        color: white;
+        background-color: #F6AB2F;
+        border-color: transparent; }
+      .wrapper .avatarWrapper .avatarPlaceholder:global(.violet) {
+        color: white;
+        background-color: #6977FF;
+        border-color: transparent; }
+      .wrapper .avatarWrapper .avatarPlaceholder:global(.red) {
+        color: white;
+        background-color: #E6492D;
+        border-color: transparent; }
+      .wrapper .avatarWrapper .avatarPlaceholder:global(.lightblue) {
+        background-color: #98CAEC;
+        background-image: linear-gradient(-45deg, #98CAEC 0%, #44ADE5 100%);
+        border-color: transparent;
+        color: white; }
+    .wrapper .avatarWrapper .avatar {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      display: block; }
+      .wrapper .avatarWrapper .avatar + * {
+        margin-left: 0.75rem; }
+    .wrapper .avatarWrapper .avatarMultiWrapper {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex; }
+      .wrapper .avatarWrapper .avatarMultiWrapper > .avatar {
+        border-radius: 0;
+        margin: 0 !important; }
+      .wrapper .avatarWrapper .avatarMultiWrapper.s2 > .avatar {
+        transform: translateX(-50%); }
+      .wrapper .avatarWrapper .avatarMultiWrapper.s3 > .avatar:nth-child(1) {
+        transform: translateX(-50%); }
+      .wrapper .avatarWrapper .avatarMultiWrapper.s3 > .avatar:nth-child(2), .wrapper .avatarWrapper .avatarMultiWrapper.s3 > .avatar:nth-child(3) {
+        height: 50%;
+        width: 50%; }
+      .wrapper .avatarWrapper .avatarMultiWrapper.s3 > .avatar:nth-child(2) {
+        transform: translateX(-100%); }
+      .wrapper .avatarWrapper .avatarMultiWrapper.s3 > .avatar:nth-child(3) {
+        transform: translateX(-200%) translateY(100%); }
+      .wrapper .avatarWrapper .avatarMultiWrapper.s4 {
+        flex-wrap: wrap; }
+        .wrapper .avatarWrapper .avatarMultiWrapper.s4 > .avatar {
+          height: 50%;
+          width: 50%; }
+  .wrapper .textTop {
+    font-size: 0.75rem;
+    color: #9EA0A5;
+    line-height: 1.125rem;
+    overflow: hidden;
+    white-space: nowrap; }
+  .wrapper .textBottom {
+    font-size: 0.75rem;
+    color: #9EA0A5;
+    line-height: 1.125rem;
+    margin-top: 2px;
+    overflow: hidden;
+    white-space: nowrap; }
+  .wrapper.small .avatarWrapper {
+    height: 28px;
+    width: 28px; }
+  .wrapper.large .avatarWrapper, .wrapper.larger .avatarWrapper, .wrapper.extraLarge .avatarWrapper {
+    height: 60px;
+    width: 60px; }
+  .wrapper.large .textTop, .wrapper.large .textBottom, .wrapper.larger .textTop, .wrapper.larger .textBottom, .wrapper.extraLarge .textTop, .wrapper.extraLarge .textBottom {
+    font-size: 0.875rem; }
+  .wrapper.large .name, .wrapper.larger .name, .wrapper.extraLarge .name {
+    font-size: 1rem;
+    line-height: 1.5rem; }
+  .wrapper.larger .avatarWrapper {
+    height: 80px;
+    width: 80px; }
+  .wrapper.extraLarge .avatarWrapper {
+    height: 100px;
+    width: 100px; }
+  .wrapper.jumbo .avatarWrapper {
+    height: 120px;
+    width: 120px; }
+
+.info {
+  margin-left: 12px;
+  flex-grow: 1; }
+  .info > * {
+    display: block; }
+
+.statusWrapper {
+  margin-left: 10px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #9EA0A5;
+  font-size: .75rem; }
+  .statusWrapper .statusOnline {
+    background: #38B249;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%; }

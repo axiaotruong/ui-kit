@@ -1,0 +1,56 @@
+.inputWrapper {
+  position: relative; }
+
+.inputLabel {
+  font-size: .75rem;
+  font-weight: 500;
+  color: #9EA0A5;
+  margin-bottom: 7px;
+  display: block;
+  line-height: 1.125rem; }
+
+.input {
+  line-height: 36px;
+  border: 1px solid #EAEDF3;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  background: white;
+  padding: 0 15px;
+  transition: .2s all;
+  outline: none;
+  font-size: 0.875rem; }
+  .input + * {
+    margin-top: 10px; }
+  .input:disabled {
+    background: rgba(255, 255, 255, 0.3); }
+  .input:focus {
+    border-color: #1665D8; }
+  .input::-webkit-input-placeholder, .input::-moz-placeholder, .input:-ms-input-placeholder, .input:-moz-placeholder {
+    color: #9EA0A5; }
+
+.iconWrapper {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  color: #D8DCE6;
+  transform: translateY(-50%); }
+  .iconWrapper + input {
+    padding-left: 40px; }
+
+.clear .iconWrapper {
+  left: 0; }
+  .clear .iconWrapper + input {
+    padding-left: 28px; }
+
+.clear input {
+  padding: 0;
+  border: none !important; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5500s ease-in-out 0s !important;
+  color: #6B6C6F !important;
+  -webkit-text-fill-color: #6B6C6F !important; }

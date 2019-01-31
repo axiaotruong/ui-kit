@@ -1,0 +1,198 @@
+a.base:hover {
+  text-decoration: none !important; }
+
+.base {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  height: 36px;
+  padding: 0 18px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #D8DCE6;
+  transition: all 0.3s ease-in-out 0s;
+  color: #3E3F42;
+  font-size: 0.875rem;
+  font-weight: 400;
+  position: relative; }
+  .base.hasIcon {
+    padding-left: 40px; }
+    .base.hasIcon .iconWrapper {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      transform: translateY(-50%);
+      font-size: 18px; }
+  .base.iconRight {
+    padding-right: 40px;
+    padding-left: 18px; }
+    .base.iconRight .iconWrapper {
+      left: auto;
+      right: 12px; }
+  .base .content {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+  .base > * {
+    transition: .2s all; }
+  .base > .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .base.isLoading > * {
+    opacity: 0; }
+  .base.isLoading > .loader {
+    opacity: 1; }
+  .base.xs {
+    height: 28px;
+    padding: 0 15px;
+    font-size: 12px; }
+  .base.lg {
+    height: 48px;
+    padding: 0 40px;
+    font-size: 16px; }
+  .base:not(:disabled) {
+    cursor: pointer; }
+  .base:hover {
+    background: #f7f8fa; }
+  .base:focus {
+    outline: none;
+    box-shadow: none;
+    background: white; }
+  .base.transparent {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.1); }
+    .base.transparent:hover {
+      background-color: rgba(255, 255, 255, 0.3); }
+  .base:active {
+    border: 1px solid #eee;
+    box-shadow: none;
+    transform: translateY(0px); }
+  .base.success {
+    color: white;
+    background: #38B249;
+    border-color: #38B249; }
+    .base.success:hover {
+      border: 1px solid #44c456;
+      background: #44c456; }
+    .base.success:active {
+      border: 1px solid #2f973e;
+      background: #329f41; }
+    .base.success:focus {
+      border: 1px solid #2f973e;
+      background: #329f41; }
+  .base.warning {
+    color: white;
+    background: #F6AB2F;
+    border-color: #F6AB2F; }
+    .base.warning:hover {
+      border: 1px solid #f7b74c;
+      background: #f7b74c; }
+    .base.warning:active {
+      border: 1px solid #f59d0d;
+      background: #f5a117; }
+    .base.warning:focus {
+      border: 1px solid #f59d0d;
+      background: #f5a117; }
+  .base.error {
+    color: white;
+    background: #E6492D;
+    border-color: #E6492D; }
+    .base.error:hover {
+      border: 1px solid #e96148;
+      background: #e96148; }
+    .base.error:active {
+      border: 1px solid #d63619;
+      background: #df381b; }
+    .base.error:focus {
+      border: 1px solid #d63619;
+      background: #df381b; }
+  .base.primary {
+    color: white;
+    background: #1665D8;
+    border-color: #1665D8; }
+    .base.primary:hover {
+      border: 1px solid #2474e9;
+      background: #2474e9; }
+    .base.primary:active {
+      border: 1px solid #1356b8;
+      background: #145ac1; }
+    .base.primary:focus {
+      border: 1px solid #1356b8;
+      background: #145ac1; }
+  .base.default {
+    color: white;
+    background: #eee;
+    border-color: #eee; }
+    .base.default:hover {
+      border: 1px solid #fdfdfd;
+      background: #fdfdfd; }
+    .base.default:active {
+      border: 1px solid gainsboro;
+      background: #e1e1e1; }
+    .base.default:focus {
+      border: 1px solid gainsboro;
+      background: #e1e1e1; }
+  .base.dark {
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    border-color: rgba(0, 0, 0, 0.4);
+    border-width: 0 !important; }
+    .base.dark:hover {
+      border: 1px solid rgba(15, 15, 15, 0.4);
+      background: rgba(15, 15, 15, 0.4); }
+    .base.dark:active {
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.4); }
+    .base.dark:focus {
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.4); }
+  .base:disabled {
+    color: #bdbdbd;
+    box-shadow: none;
+    background: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    cursor: not-allowed; }
+    .base:disabled.icon {
+      opacity: 0.3; }
+  .base.clear {
+    background: transparent;
+    border: none !important;
+    outline: none !important; }
+  .base.iconOnly {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 0;
+    justify-content: center;
+    font-size: 1.3rem; }
+    .base.iconOnly i.buttonIcon {
+      margin-left: 0;
+      margin-right: 0; }
+
+/* Necessary if icon is present in <a> element
+// otherwise it's not aligned to the text */
+a.commonButton * {
+  vertical-align: middle; }
+
+a.commonButton {
+  text-decoration: none; }
+
+.buttonIcon {
+  flex-grow: 0;
+  margin-left: 8px;
+  margin-right: -2px;
+  font-size: 16px; }
+  .buttonIcon.iconLeft {
+    margin-left: -2px;
+    margin-right: 8px;
+    order: -1; }
+  .buttonIcon.iconOnly {
+    margin-left: 0;
+    margin-right: 0; }

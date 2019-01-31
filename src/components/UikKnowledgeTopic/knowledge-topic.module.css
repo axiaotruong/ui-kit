@@ -1,0 +1,30 @@
+div.wrapper {
+  display: flex;
+  align-items: center;
+  transition: .2s; }
+  div.wrapper + * {
+    margin-top: 30px; }
+  div.wrapper .content {
+    margin-left: 24px;
+    flex-grow: 1; }
+    div.wrapper .content + * {
+      margin-left: 24px; }
+    div.wrapper .content .title {
+      display: flex;
+      align-items: center; }
+    div.wrapper .content .tag {
+      margin-left: 10px; }
+  div.wrapper .action {
+    margin-left: 20px;
+    display: block; }
+  div.wrapper .users {
+    display: flex;
+    justify-content: flex-end; }
+    div.wrapper .users > * + * {
+      margin-left: 10px; }
+  div.wrapper .link:hover {
+    color: #1665D8; }
+
+.dropdownIcon {
+  font-size: .7rem;
+  color: #9EA0A5; }

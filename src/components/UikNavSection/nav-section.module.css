@@ -1,0 +1,8 @@
+.wrapper + .wrapper {
+  margin-top: 20px; }
+
+.wrapper:last-child {
+  margin-bottom: 20px; }
+
+.wrapper:first-child {
+  margin-top: 15px; }

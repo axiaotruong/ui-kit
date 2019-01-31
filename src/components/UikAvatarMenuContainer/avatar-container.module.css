@@ -1,0 +1,4 @@
+.wrapper {
+  padding: 6px 30px; }
+  .wrapper > *:not(:last-child) {
+    margin-bottom: 12px; }

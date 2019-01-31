@@ -1,0 +1,29 @@
+.wrapper {
+  flex-basis: 350px;
+  flex-shrink: 1; }
+
+.cover {
+  background: no-repeat center center;
+  background-size: cover;
+  height: 190px; }
+
+.content {
+  padding: 24px 30px; }
+  .content h3 {
+    font-weight: 500; }
+  .content p {
+    color: #9EA0A5;
+    margin-top: 0.7rem; }
+  .content .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .content .meta .duration {
+      font-size: .875rem;
+      color: #9EA0A5; }
+
+.extra {
+  border-top: 1px solid #EAEDF3;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between; }

@@ -1,0 +1,8 @@
+.wrapper {
+  padding: 15px; }
+  .wrapper.contentCenter {
+    max-width: 1170px;
+    margin: 0 auto; }
+
+.item {
+  margin: 15px; }

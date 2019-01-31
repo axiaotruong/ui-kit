@@ -1,0 +1,5 @@
+.container {
+  display: flex;
+  padding: 0 15px; }
+  .container:not(:last-child) {
+    border-bottom: 1px solid #EAEDF3; }

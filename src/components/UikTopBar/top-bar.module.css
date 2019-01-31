@@ -1,0 +1,22 @@
+.wrapper {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #EAEDF3;
+  flex-shrink: 0;
+  flex-grow: 0; }
+  .wrapper.center {
+    justify-content: center; }
+
+.pageName {
+  /* Socialio: */
+  font-weight: 500;
+  font-size: 1rem;
+  color: #3E3F42;
+  line-height: 1.75; }
+  .pageName i {
+    color: #1665D8;
+    margin-right: 14px; }
